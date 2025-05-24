@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Pagination Scroll Bar</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.pagination {
+    display: flex;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.page-link {
+    color: #ff007f;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.page-link:hover {
+    background-color: #333;
+}
+
+.page-link.active {
+    background-color: #ff007f;
+    color: white;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="pagination">
+        <a href="#" class="page-link">&laquo;</a>
+        <a href="#" class="page-link">&lsaquo;</a>
+        <a href="#" class="page-link active">1</a>
+        <a href="#" class="page-link">2</a>
+        <a href="#" class="page-link">3</a>
+        <a href="#" class="page-link">&rsaquo;</a>
+        <a href="#" class="page-link">&raquo;</a>
+    </div>
+</body>
+</html>
